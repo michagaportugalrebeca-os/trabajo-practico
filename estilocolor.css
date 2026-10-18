@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8484e6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #2b5797;
+    background-color: #f185bd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Barra de pestañas superior */
+.barra-pestanas {
+    display: flex;
+    background-color: #f498d2;
+    border-bottom: 2px solid #2b5797;
+}
+
+.pestana {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #20c1b6; /* Rojo del marcador de la pizarra */
+    text-decoration: none;
+    border-right: 1px solid #ccc;
+    transition: background 0.3s;
+}
+
+.pestana:last-child {
+    border-right: none;
+}
+
+.pestana:hover {
+    background-color: #e0e0e0;
+}
+
+/* Pestaña resaltada para saber dónde estamos parados */
+.pestana.activa {
+    background-color: #ffffff;
+    border-bottom: 3px solid #cc0000;
+    color: #800000;
+}
+
+/* Contenedor del contenido abajo */
+.contenedor-contenido {
+    padding: 30px;
+    min-height: 400px;
+}
+
+/* Diseño interno para la carátula de Inicio */
+.caratula {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.logo-instituto {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px dashed #999;
+}
+
+/* Diseño interno para los Emprendimientos (Galerías) */
+.galeria-imagenes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.recuadro-imagen {
+    flex: 1;
+    min-width: 250px;
+    height: 200px;
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #bbb;
+}
+
+.recuadro-video {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 0 auto;
+}
